@@ -1,5 +1,5 @@
-## fragmentMod
-The present mod is a library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Early-Access game under development by [Brace Yourself Games](https://braceyourselfgames.com). It is programmed in C-Sharp with code-injection through [Harmony Framework](https://harmony.pardeike.net/).
+## PB_fragmentMod
+A library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Early-Access game under development by [Brace Yourself Games](https://braceyourselfgames.com). It is programmed in C-Sharp with code-injection through [Harmony Framework](https://harmony.pardeike.net/).
 
 The main purpose of this mod is to introduce [MIRV Missiles](https://en.wikipedia.org/wiki/Multiple_independently_targetable_reentry_vehicle) with different splitting patterns to choose from.
 
