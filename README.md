@@ -1,11 +1,21 @@
 ## fragmentMod
-The present mod is a library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Early-Access game under development by [Brace Yourself Games](https://braceyourselfgames.com). It is programmed in C# programming language with code-injection through Harmony Libraries
+The present mod is a library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Early-Access game under development by [Brace Yourself Games](https://braceyourselfgames.com). It is programmed in C-Sharp with code-injection through [Harmony Framework](https://harmony.pardeike.net/).
 
 The main purpose of this mod is to introduce [MIRV Missiles](https://en.wikipedia.org/wiki/Multiple_independently_targetable_reentry_vehicle) with different splitting patterns to choose from.
 
 <b>NOTE:</b> as the mod is still a WIP and game updates may brick the mod out, is way to be perfect and fully operational without any future-proof fixes. This is my very first attempt to manipulate projectiles at runtime through code-injection level, without the need to modify projectiles' input curve contained in each weapon's YAML file config.
 
 Since the mod is mainly tested on the Experimental version of the game, it may be broken in case of conflict with new game updates.
+
+## Installation and required tools
+- Go to PhantomBrigade folder (located in Documents/My Games) and create a folder named 'Mods' if not present;
+- Create a YAML file named 'mods.yaml' (including the file extension name) if not present;
+- Open mods.yaml with Notepad++ / Sublime Text (either one of them is mandatory) and insert the following properties as shown below:
+![mods_config_02](https://user-images.githubusercontent.com/88181255/188758336-726faaca-9031-47d2-8ec4-07fa2e98f845.png)
+- Save the changes;
+- In the PB_fragmentMod.7z file, copy and paste the whole mod folder (fragmentMod) into Mods folder;
+- Start the game, go to Mods menu and enable the mod (you have to reboot the game as it doesn't support hot plug mod support);
+- Find the Missile Launcher "Sling" model and enjoy!
 
 ## Basic introduction
 The main idea to develop this kind of mod came when I tried, through weapon config files, to apply the same fragmentation properties used by shotguns as a similar system weren't available to Missile Launchers. This made me realized that approach wasn't technically possible as I needed to split the projectile after a set time. The system used in shotguns works in order to apply instant fragmentation (immediately after the projectiles are fired) and the fragmentation delay algorithm works specifically for that kind of weapons, which is why I decided to develop a fragmentation system specifically for missiles.
