@@ -11,7 +11,7 @@ Since the mod is mainly tested on the Experimental version of the game, it may b
 - Go to PhantomBrigade folder (located in Documents/My Games) and create a folder named 'Mods' if not present;
 - Create a YAML file named 'mods.yaml' (including the file extension name) if not present;
 - Open mods.yaml with Notepad++ / Sublime Text (either one of them is mandatory) and insert the following properties as shown below:
-![mods_config_02](https://user-images.githubusercontent.com/88181255/188758336-726faaca-9031-47d2-8ec4-07fa2e98f845.png)
+- ![mods_config_02](https://user-images.githubusercontent.com/88181255/188758336-726faaca-9031-47d2-8ec4-07fa2e98f845.png)
 - Save the changes;
 - In the PB_fragmentMod.7z file, copy and paste the whole mod folder (fragmentMod) into Mods folder;
 - Start the game, go to Mods menu and enable the mod (you have to reboot the game as it doesn't support hot plug mod support);
@@ -45,12 +45,3 @@ Since the game is built around Unity Game Engine, missiles (as well as ballistic
 
 ## Live Demo
 https://user-images.githubusercontent.com/88181255/188748556-9b0dc88f-db61-4542-816c-647e1e9dcfc7.mp4
-
-## Work status
-
-The actual work for creating functional child projectiles from a original warhead is done and the mod is considered functional with no basic issues at runtime, Therefore I can consider it as a operational version 1.0.0 of the mod.
-In the moment I am writing this readme (2022-09-07), the only supported splitting patterns are Starbust and Circular, with some others as WIP and not guaranteed to be implemented anytime soon, unless announced otherwise.
-
-## Known issues
-- [ ] Missile ignition sound event persists after missile(s) destruction;
-- [ ] Child Missiles' guidance towards map boundaries when force attack;
