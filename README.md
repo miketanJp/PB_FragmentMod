@@ -17,6 +17,8 @@ Since the mod is mainly tested on the Experimental version of the game, it may b
 - Start the game, go to Mods menu and enable the mod (you have to reboot the game as it doesn't support hot plug mod support);
 - Find the Missile Launcher "Sling" model and enjoy!
 
+More information about Phantom Brigade's modding system can be found [here](https://wiki.braceyourselfgames.com/en/PhantomBrigade/Modding/ModSystem).
+
 ## Basic introduction
 The main idea to develop this kind of mod came when I tried, through weapon config files, to apply the same fragmentation properties used by shotguns as a similar system weren't available to Missile Launchers. This made me realized that approach wasn't technically possible as I needed to split the projectile after a set time. The system used in shotguns works in order to apply instant fragmentation (immediately after the projectiles are fired) and the fragmentation delay algorithm works specifically for that kind of weapons, which is why I decided to develop a fragmentation system specifically for missiles.
 
