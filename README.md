@@ -11,7 +11,7 @@ Since the mod is mainly tested on the Experimental version of the game, it may b
 - Go to PhantomBrigade folder (located in Documents/My Games) and create a folder named 'Mods' if not present;
 - Create a YAML file named 'mods.yaml' (including the file extension name) if not present;
 - Open mods.yaml with Notepad++ / Sublime Text (either one of them is mandatory) and insert the following properties as shown below:
-- ![mods_config_02](https://user-images.githubusercontent.com/88181255/188758336-726faaca-9031-47d2-8ec4-07fa2e98f845.png)
+<br>![mods_config_02](https://user-images.githubusercontent.com/88181255/188758336-726faaca-9031-47d2-8ec4-07fa2e98f845.png)
 - Save the changes;
 - In the PB_fragmentMod.7z file, copy and paste the whole mod folder (fragmentMod) into Mods folder;
 - Start the game, go to Mods menu and enable the mod (you have to reboot the game as it doesn't support hot plug mod support);
@@ -34,7 +34,11 @@ Since the game is built around Unity Game Engine, missiles (as well as ballistic
 - fragment_key (strings) → The subsystem (actual weapon) where the injection should happen.
 - fragment_hardpoint (strings) → The weapon hardpoint where the fragmentation will be performed;
 - fragment_fanout (strings) → Fanout pattern to perform the desired splitting mode;
-- fragment_scale (vectors) → New projectiles scale express in Vector3 coordinates (X,Y,Z)
+- fragment_scale (vectors) → New projectiles scale express in Vector3 coordinates (X,Y,Z);
+
+<b>Custom properties (Missile Launcher YAML file)</b>
+<br>![properties_example](https://user-images.githubusercontent.com/88181255/188760147-1e2c772f-ae3e-4c79-88d1-2fef853b4b59.png)
+
 
 <b>WARNING:</b> in order to avoid issues, it is strongly adviced to set an amount between 18 and 23. There's no way a real MIRV missile can hold such a high number of independent wareheads (i.e. 30).
 
