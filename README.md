@@ -51,3 +51,6 @@ Since the game is built around Unity Game Engine, missiles (as well as ballistic
 
 ## Live Demo
 https://user-images.githubusercontent.com/88181255/188748556-9b0dc88f-db61-4542-816c-647e1e9dcfc7.mp4
+
+## Special Thanks
+@echkode for the contribution behind the development of this mod.
