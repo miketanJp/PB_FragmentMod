@@ -1,3 +1,5 @@
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/miketanJp/PB_fragmentMod?color=red&label=latest) ![GitHub release (latest by date and asset)](https://img.shields.io/github/downloads/miketanJp/PB_fragmentMod/v1.0.0/PB_FragmentMod.7z?color=red&label=Download&style=plastic) ![GitHub](https://img.shields.io/github/license/miketanJp/PB_fragmentMod)
+
 ## PB_fragmentMod
 A library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Early-Access game under development by [Brace Yourself Games](https://braceyourselfgames.com). It is programmed in C-Sharp with code-injection through [Harmony Framework](https://harmony.pardeike.net/).
 
