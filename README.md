@@ -3,24 +3,24 @@
 
 A library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Hybrid turn-based strategy game by [Brace Yourself Games](https://braceyourselfgames.com). The mod is developed in C-Sharp programming language with the use of [Harmony Framework](https://harmony.pardeike.net/).
 
-The main purpose of this mod is to introduce [MIRV Missiles](https://en.wikipedia.org/wiki/Multiple_independently_targetable_reentry_vehicle) and and a delayed fragmentation mode.
+The main purpose of this mod is to introduce [MIRV Missiles](https://en.wikipedia.org/wiki/Multiple_independently_targetable_reentry_vehicle) and and a delayed fragmentation mode. It can be crafted into the workshop as well, provided you have the necessary workshop charge (and resource) to make it.
 
 ## Installation / Editing
-- Go to PhantomBrigade folder (located in Documents/My Games) and create a folder named 'Mods' if not present;
+- Go to PhantomBrigade folder (located in C:\Users\[USER]\AppData\Local\PhantomBrigade) and create a folder named 'Mods' inside of it, if not present;
 - Create a YAML file named 'mods.yaml' (including the file extension name) if not present;
-- Open mods.yaml with Notepad++ / Sublime Text (either one of them is mandatory) and insert the following properties as shown below:
+- Open Notepad++ / Sublime Text and insert the following properties as shown below:
 <br>![mods_config_02](https://user-images.githubusercontent.com/88181255/188758336-726faaca-9031-47d2-8ec4-07fa2e98f845.png)
-- Save the changes;
+- Save the changes into AppData\Local\PhantomBrigade\Settings;
 - In the PB_fragmentMod.7z file, copy and paste the whole mod folder (fragmentMod) into Mods folder;
-- Start the game, go to Mods menu and enable the mod (you have to reboot the game as it doesn't support hot plug mod support);
-- Find the Missile Launcher "Sling" model and enjoy!
+- Start the game, go to Mods menu and enable the mod (you have to reboot the game as the game doesn't support hot-plug mod loading);
+- Find the Missile Launcher "MRV/01 Vanguard" and Enjoy!
 
 More information about Phantom Brigade's Modding System can be found [here](https://wiki.braceyourselfgames.com/en/PhantomBrigade/Modding/ModSystem).
 
 ## Basic introduction
 The main idea to develop the mod came when I tried, through weapon config files, to apply the same fragmentation properties used by shotguns as a similar system doesn't officially exists for missile launchers. It made me realize that approach wasn't technically possible as I needed to split the projectile after a set time. The system used in shotguns works in order to apply instant fragmentation only for that kind of weapons.
 
-The mod uses custom properties in the weapon's YAML file, each one of them can be customized with desired values. Fragmented projectiles created in that istant will then inherit the properties of the original warhead (guidance data, projectile speed, lifetime, etc.), otherwise will either cause conflicts or empty assets with no properties attached.
+The mod uses custom properties in the weapon's YAML file, each one of them can be customized with desired values. Fragmented projectiles created in that istant will then inherit the properties of the original one (guidance data, projectile speed, lifetime, etc.).
 
 <b>Custom values used in this mod</b>
 - fragment_count (ints) → The number of fragments created from the original warhead while splitted;
