@@ -1,11 +1,9 @@
-## PB_fragmentMod
+## MIRV Missiles AKA Fragmentation Mod
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/miketanJp/PB_fragmentMod?color=red&label=latest) ![GitHub release (latest by date and asset)](https://img.shields.io/github/downloads/miketanJp/PB_fragmentMod/v1.0.0/PB_FragmentMod.7z?color=red&label=Download) ![GitHub](https://img.shields.io/github/license/miketanJp/PB_fragmentMod)
 
-A library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Early-Access game under development by [Brace Yourself Games](https://braceyourselfgames.com). The mod is developed in C-Sharp programming language and [Harmony Framework](https://harmony.pardeike.net/).
+A library mod for [Phantom Brigade](https://braceyourselfgames.com/phantom-brigade/), a Hybrid turn-based strategy game by [Brace Yourself Games](https://braceyourselfgames.com). The mod is developed in C-Sharp programming language with the use of [Harmony Framework](https://harmony.pardeike.net/).
 
-The main purpose of this mod is to introduce [MIRV Missiles](https://en.wikipedia.org/wiki/Multiple_independently_targetable_reentry_vehicle) with different splitting patterns to choose from.
-
-<b>NOTE:</b> as the mod is still a WIP and game updates may brick the mod up, is way to be perfect. This is my very first attempt to manipulate projectiles at runtime with the help of code injection (performed by its internal modding system), without the need to modify projectiles' input curves contained in each weapon's YAML file config.
+The main purpose of this mod is to introduce [MIRV Missiles](https://en.wikipedia.org/wiki/Multiple_independently_targetable_reentry_vehicle) and and a delayed fragmentation mode.
 
 ## Installation / Editing
 - Go to PhantomBrigade folder (located in Documents/My Games) and create a folder named 'Mods' if not present;
@@ -22,9 +20,7 @@ More information about Phantom Brigade's Modding System can be found [here](http
 ## Basic introduction
 The main idea to develop the mod came when I tried, through weapon config files, to apply the same fragmentation properties used by shotguns as a similar system doesn't officially exists for missile launchers. It made me realize that approach wasn't technically possible as I needed to split the projectile after a set time. The system used in shotguns works in order to apply instant fragmentation only for that kind of weapons.
 
-The mod uses custom properties in the weapon's YAML file, each one of them can be customized with desired values. Fragmented projectiles created in that istant will then inherit the properties of the original warhead (guidance data, projectile speed, lifetime, etc.), otherwise will either cause conflicts or empty assets with no properties attached ( = mere game props with no physics properties) if not inherited.
-
-As the game is developed in Unity, missiles (as well as ballistic projectiles) use a good amount of rotation functions to obtain facing, rotations and custom calls to perform more or less the same operations with lesser code. Some of them are Vector3 and Quaternion rotations.
+The mod uses custom properties in the weapon's YAML file, each one of them can be customized with desired values. Fragmented projectiles created in that istant will then inherit the properties of the original warhead (guidance data, projectile speed, lifetime, etc.), otherwise will either cause conflicts or empty assets with no properties attached.
 
 <b>Custom values used in this mod</b>
 - fragment_count (ints) → The number of fragments created from the original warhead while splitted;
@@ -39,7 +35,7 @@ As the game is developed in Unity, missiles (as well as ballistic projectiles) u
 <br>![properties_example](https://user-images.githubusercontent.com/88181255/188760147-1e2c772f-ae3e-4c79-88d1-2fef853b4b59.png)
 
 
-<b>WARNING:</b> in order to avoid issues, it is strongly adviced to set an amount between 18 and 23. For some strange reasons, if the set amount of child missiles is huge, results are that some of the child projectiles are either gone or causing visual issues as stated.
+<b>WARNING:</b> in order to avoid issues, it is strongly adviced to set an amount between 18 and 23. For some strange reasons, if the set amount of child missiles is huge, results are that some of them are either gone or causing visual issues.
 
 ## Images
 ![starbust](https://user-images.githubusercontent.com/88181255/188744853-dbecbb07-64be-403b-95ce-61c9e719f7cf.png)
